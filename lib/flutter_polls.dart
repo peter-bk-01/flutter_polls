@@ -379,13 +379,13 @@ class FlutterPolls extends HookWidget {
                           ),
                         ),
                 );
-              }
+              }s
             },
           ),
         const SizedBox(height: 4),
         Row(
           children: [
-          if(votesText!=null && votesText.isNotEmpty)
+          if(votesText!=null && votesText!="")
             Text(
               '${totalVotes.value} $votesText',
               style: votesTextStyle ??
