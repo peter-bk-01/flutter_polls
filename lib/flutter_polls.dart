@@ -301,6 +301,7 @@ class FlutterPolls extends HookWidget {
                                           size: 16,
                                         ),
                                   const Spacer(),
+                                  if(votesText.isNotEmpty)
                                   Text(
                                     totalVotes.value == 0
                                         ? "0 $votesText"
