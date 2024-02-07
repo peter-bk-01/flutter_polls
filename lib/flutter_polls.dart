@@ -301,7 +301,6 @@ class FlutterPolls extends HookWidget {
                                           size: 16,
                                         ),
                                   const Spacer(),
-                                  if(votesText!=null && votesText.isNotEmpty)
                                   Text(
                                     totalVotes.value == 0
                                         ? "0 $votesText"
@@ -386,6 +385,7 @@ class FlutterPolls extends HookWidget {
         const SizedBox(height: 4),
         Row(
           children: [
+          if(votesText!=null && votesText.isNotEmpty)
             Text(
               '${totalVotes.value} $votesText',
               style: votesTextStyle ??
